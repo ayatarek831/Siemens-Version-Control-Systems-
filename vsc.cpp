@@ -12,9 +12,16 @@ int getSum(std::vector<int> arr)
     return sum;
 }
 
+float getAverage(std::vector<int> arr)
+{
+    int length = arr.size();
+    return getSum(arr)/float(length);
+}
+
 int main()
 {
     std::vector<int> arr ={1,2,3,4,5,6,7,8,9,10};
     std::cout<<"The sum of the vector is: "<<getSum(arr)<<std::endl;
+    std::cout<<"The Average of the vector is: "<<getAverage(arr)<<std::endl;
     return 0;
 }
